@@ -3,15 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <TextView
-        android:id="@+id/tv"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="ANDROID APP"
-        android:textColor="#ffffff"
-        android:background="#ffa500"
-        android:textStyle="bold"
-        android:gravity="center"/>
+        android:layout_height="wrap_content"
+        android:src="@drawable/header_logo"/>
     <EditText
         android:id="@+id/et1"
         android:layout_width="match_parent"

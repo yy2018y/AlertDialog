@@ -12,11 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private Context mContext;
-    private TextView tv;
-    private EditText et1;
-    private EditText et2;
-    private Button btok;
-    private Button btcancel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,17 +20,11 @@ public class MainActivity extends AppCompatActivity {
         this.mContext=this;
         LayoutInflater layoutInflater = LayoutInflater.from(mContext);
         View dialogView = layoutInflater.inflate(R.layout.my_dialog, null);
-        tv=(TextView) dialogView.findViewById(R.id.tv);
-        et1=(EditText) dialogView.findViewById(R.id.et1);
-        et2=(EditText) dialogView.findViewById(R.id.et2);
-        btok=(Button) dialogView.findViewById(R.id.btn_ok);
-        btcancel=(Button) dialogView.findViewById(R.id.btn_cancel);
         android.app.AlertDialog dialog=new android.app.AlertDialog.Builder(mContext)
                 .setTitle(null)
                 .setView(dialogView)                //加载自定义的对话框式样
                 .setNeutralButton("Cancel", null)
                 .setPositiveButton("Sign in", null)
-
                 .create();
 
 
